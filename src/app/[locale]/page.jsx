@@ -48,8 +48,6 @@ const page = () => {
                 <Cart />
             </Popup>
 
-
-
             <Notification />
         </main>
     );
