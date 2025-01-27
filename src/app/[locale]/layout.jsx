@@ -30,10 +30,17 @@ export default function RootLayout({ children, params: { locale } }) {
 
     return (
         <html lang={locale} dir={locale == 'en' ? 'ltr' : 'rtl'}>
-            <Head>
-                {/* <meta name='description' content='Make your wedding unforgettable with a wide selection of stunning designs and spacious venues tailored for unique events.' />
-                <meta name='keywords' content='wedding halls, luxury venues, event booking, Saudi Arabia weddings, unique event spaces' /> */}
+            <Head> 
+            <meta property="og:title" content="طيب الحور | بخور درهم الاماراتي (عروض العيد الوطني بكمية محدودة 😍🇦🇪🇦🇪" />
+    <meta property="og:description" content="يستخدم في التعطير الشخصي وتبخير المنازل والمكاتب والسيارة، يتمتع برائحة هادئة تلطف الأجواء وتبعث الراحة والطمأنينة في النفس مما يجعله مثالي في المناسبات الخاصة والعزائم." />
+    <meta property="og:image" content="https://landing-22.vercel.app/imgs/logo.webp" />
+    <meta property="og:url" content="https://landing-22.vercel.app/" />
+    <meta property="og:type" content="website" />
 
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="طيب الحور | بخور درهم الاماراتي (عروض العيد الوطني بكمية محدودة 😍🇦🇪🇦🇪" />
+    <meta name="twitter:description" content="يستخدم في التعطير الشخصي وتبخير المنازل والمكاتب والسيارة، يتمتع برائحة هادئة تلطف الأجواء وتبعث الراحة والطمأنينة في النفس مما يجعله مثالي في المناسبات الخاصة والعزائم." />
+    <meta name="twitter:image" content="https://landing-22.vercel.app/imgs/logo.webp" />
             </Head>
 
             <body className=' '>
