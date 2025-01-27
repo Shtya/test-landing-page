@@ -6,7 +6,7 @@ import React from 'react';
 const ReviewModal = ({data , RatingComponent}) => {
 	const t = useTranslations("home")
     return (
-        <div className='relative w-full h-[calc(100vh-220px)] ' style={{direction:"rtl"}}  >
+        <div className='relative w-full overflow-hidden flex flex-col items-start justify-start max-sm:h-[calc(100vh-150px)] sm:h-[calc(100vh-40px)] ' style={{direction:"rtl"}}  >
 			<img src='/imgs/bg-whatsapp.webp' className=' z-[-1] absolute inset-0 object-contain ' />
             
 			<div className=' comments scrollbar-width-custom   mb-3 flex h-full w-full flex-col-reverse overflow-x-hidden overflow-y-scroll px-6'>
@@ -44,6 +44,7 @@ const ReviewModal = ({data , RatingComponent}) => {
 				}
 				
             </div>
+
             <div className='bg-white z-[10] relative  w-full rounded-t-2xl px-4 pb-5 pt-5'>
                 <form>
                     <div className='relative'>

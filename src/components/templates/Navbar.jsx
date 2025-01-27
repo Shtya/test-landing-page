@@ -10,8 +10,6 @@ export default function Navbar() {
     const t = useTranslations('aside-modal');
     const locale = useLocale();
     const [isModalOpen, setIsModalOpen] = useState(false);
-    
-        
 
     return (
         <>
@@ -47,21 +45,11 @@ export default function Navbar() {
                 </div>
             </div>
 
-            <Popup title={t('title')} isModalOpen={isModalOpen} setIsModalOpen={setIsModalOpen} >
+            <Popup title={t('title')} isModalOpen={isModalOpen} setIsModalOpen={setIsModalOpen}>
                 {/* Modal Content */}
-                <div className='relative flex h-[calc(100dvh-52px)] flex-col  '>
+                <div className='relative flex flex-col overflow-auto max-sm:h-[calc(100vh-200px)] sm:h-[calc(100vh-100px)]  '>
                     {/* Scrollable Content */}
-                    <div dir='rtl' className='relative h-[calc(100dvh-100px)] overflow-hidden'>
-                        <style jsx>{`
-                            [data-radix-scroll-area-viewport] {
-                                scrollbar-width: none;
-                                -ms-overflow-style: none;
-                                -webkit-overflow-scrolling: touch;
-                            }
-                            [data-radix-scroll-area-viewport]::-webkit-scrollbar {
-                                display: none;
-                            }
-                        `}</style>
+                    <div dir='rtl' className='relative '>
 
                         <div className=' bg-[#fff] h-full w-full overflow-y-auto  '>
                             <div style={{ minWidth: '100%', display: 'table' }}>
@@ -171,7 +159,7 @@ export default function Navbar() {
                                 </div>
 
                                 {/* Footer  */}
-                                <div className='bg-white fixed w-full bottom-0 mt-auto flex justify-around border-t border-gray-200 px-3 py-4 text-center'>
+                                <div className='bg-white fixed h-[50px] w-full bottom-0 mt-auto flex justify-around border-t border-gray-200 px-3 py-4 text-center'>
                                     <Link href='/privacy-policy' className='hover:text-primary duration-200 w-full cursor-pointer select-none text-xs transition-colors'>
                                         {t('footer1')}
                                     </Link>
